@@ -1,40 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        fill: #979898;
-        fill-opacity: 0.8;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Speech_bubble_-_left_tip_-_text" data-name="Speech bubble - left tip - text" class="cls-1" d="M566.191,7271.17h-5.625l-1.875,2.82-1.875-2.82a2.807,2.807,0,0,1-2.813-2.81v-6.55a2.815,2.815,0,0,1,2.813-2.82h9.375a2.814,2.814,0,0,1,2.812,2.82v6.55A2.806,2.806,0,0,1,566.191,7271.17Z" transform="translate(-554 -7259)"/>
-</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="15px" height="15px" viewBox="0 0 15 15">
+<path fillRule="evenodd" d="M 12.19 12.18C 12.19 12.18 6.57 12.18 6.57 12.18 6.57 12.18 4.69 14.99 4.69 14.99 4.69 14.99 2.82 12.18 2.82 12.18 1.26 12.18 0 10.92 0 9.36 0 9.36 0 2.81 0 2.81 0 1.25 1.26-0.01 2.82-0.01 2.82-0.01 12.19-0.01 12.19-0.01 13.74-0.01 15 1.25 15 2.81 15 2.81 15 9.36 15 9.36 15 10.92 13.74 12.18 12.19 12.18Z" fill="rgb(151,151,151)" opacity="0.80"/></svg>
