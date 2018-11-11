@@ -1,0 +1,7 @@
+body {
+  @include font($main-size, 400, 24.27px);
+
+  margin: 0;
+  font-family: $main-font;
+  color: $color-primary-dark;
+}
