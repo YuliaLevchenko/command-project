@@ -1,0 +1,225 @@
+@import url('reset.css');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: "Dosis", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hydden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-navigation-list {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 7px;
+  width: 150px;
+  height: 350px;
+  background-color: rgba(229, 230, 230, 0.5);
+  top: 0;
+  right: -150px;
+  transition: left .5s;
+  position: fixed;
+}
+
+
+.site-navigation-link {
+  display: block;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #606060;
+}
+
+.site-navigation-link::after {
+  border-bottom: 2px solid #606060;
+  content: '';
+  display: block;
+  padding-top: 8px;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: all 0.3ms linear;
+}
+
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  color: #000000;
+}
+
+.site-navigation-link:hover::after,
+.site-navigation-link:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.button-cal-ticker {
+  display: none;
+}
+
+.button-cal {
+  padding: 0px;
+  position: fixed;
+  top: 80px;
+  right: 70px;
+  cursor: pointer;
+  transition: left .2s;
+  width: 70px;
+}
+
+.button-cal-element {
+  display: block;
+  height: 8px;
+  background-color: #bebebe;
+  margin: 10px 0 0;
+  transition: all .1s linear .2s;
+}
+
+.button-cal-element--first {
+  margin-top: 0;
+}
+
+.button-cal-ticker:checked ~ .button-cal {
+  right: 160px;
+}
+
+.button-cal-ticker:checked ~ .site-navigation-list {
+  right: 0;
+}
+
+.button-cal-ticker:checked ~ .button-cal .button-cal-element--first {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button-cal-ticker:checked ~ .button-cal .button-cal-element--second {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button-cal-ticker:checked ~ .button-cal .button-cal-element--third {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.site-logo {
+  padding-top: 275px;
+}
+
+.site-logo-img {
+  margin: 0 auto;
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    width: 634px;
+    margin: 0 auto;
+  }
+
+  .site-header {
+    background: url(../images/dj.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1335px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+    .container {
+      width: 670px;
+  }
+
+  .site-header {
+    background: url(../images/dj-3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1335px;
+    width: 100%;
+  }
+}
+  
+  @media (min-width: 768px) and (min-width: 1199px) {
+    .container {
+      width: 1180px;
+    }
+  }
+
+  
+  @media (min-width: 1200px) {
+    .site-header {
+      margin: 0 auto;
+      background: url(../images/dj-1.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 1068px;
+      width: 100%;
+    }
+
+    
+    .site-navigation {
+      background: rgba(229, 230, 230, 0.6);
+      height: 60px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+  
+    .site-navigation-list {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 1180px;
+      /*height: 60px;*/
+      background-color: transparent;
+      margin: 0 auto;
+      position: static;
+      padding: 16px 0;
+    }
+  
+    .button-cal-ticker,
+    .button-cal {
+      display: none;
+    }
+  }
+  
+  /*@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .site-header {
+      background-image: url("../images/dj-2@2x.png");
+    }*/
